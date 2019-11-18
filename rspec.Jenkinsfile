@@ -16,9 +16,12 @@ pipeline {
         branch "master"
       }
       steps {
-        sh "rbenv local 2.6.2"
-        sh "bundle install"
-        sh "bundle exec rspec spec/simple.rspec "
+        sh """
+          source /var/lib/jenkins/.bashrc
+          rbenv local 2.6.2
+          bundle install
+          bundle exec rspec spec/simple.rspec
+        """
       }
     }
   }
