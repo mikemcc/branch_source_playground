@@ -9,6 +9,7 @@ get '/' do
   </head>
   <body>
   <h1>Hello World from Sinatra, master branch.</h1>
+  <p>Added in 'develop' branch, 2019-11-18, 3:04 PM</p>
   </body>
   </html>
   """
