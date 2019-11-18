@@ -1,0 +1,13 @@
+class Squarer
+  def square(starting_number)
+    starting_number * starting_number
+  end
+end
+ 
+describe Squarer do
+  it 'square a number' do
+    squarer = Squarer.new
+    expect(squarer.square(2)).to eq(4)
+  end
+end
+
