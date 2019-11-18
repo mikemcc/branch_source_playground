@@ -16,6 +16,7 @@ pipeline {
         branch "master"
       }
       steps {
+        sh "bundle install"
         sh "bundle exec rspec spec/simple.rspec "
       }
     }
